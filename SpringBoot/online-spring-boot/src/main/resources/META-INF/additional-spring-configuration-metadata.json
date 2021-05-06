@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "amazon-properties.endpoint-url",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon-properties.endpoint-url'"
+  },
+  {
+    "name": "amazon-properties.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon-properties.access-key'"
+  },
+  {
+    "name": "amazon-properties.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon-properties.secret-key'"
+  },
+  {
+    "name": "amazon-properties.bucket-name",
+    "type": "java.lang.String",
+    "description": "A description for 'amazon-properties.bucket-name'"
+  }
+]}

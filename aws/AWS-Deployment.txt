@@ -1,0 +1,31 @@
+ssh -i ecommerce.pem ubuntu@52.87.231.210
+sudo apt-get update
+sudo apt-get install mysql-server-5.7 apache2
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH MySQL_native_password BY 'root';
+exit
+mysql -u root -proot
+create database project;
+use project;
+exit
+exit
+
+scp -i D:\Sunbeam\ProjectStuff\project\aws\techneo.pem D:\Sunbeam\ProjectStuff\project\aws\Backend.zip ubuntu@13.127.154.199:~/
+scp -i D:\Sunbeam\ProjectStuff\project\aws\techneo.pem D:\Sunbeam\ProjectStuff\project\aws\build.zip ubuntu@13.127.154.199:~/
+
+ssh -i ecommerce.pem ubuntu@52.87.231.210
+sudo apt-get install unzip
+curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+chmod +x nodesource_setup.sh
+sudo ./nodesource_setup.sh
+sudo apt-get update
+sudo apt-get install nodejs
+node --version
+sudo unzip server.zip
+cd /var/www/html/
+sudo rm -rf *
+sudo mv ~/build.zip .
+sudo unzip build.zip
+cd ~
+cd server
+node server.js
